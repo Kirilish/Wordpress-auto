@@ -1,0 +1,4 @@
+<!doctype html><html <?php language_attributes(); ?>><head><meta charset="<?php bloginfo('charset'); ?>"><meta name="viewport" content="width=device-width, initial-scale=1"><?php wp_head(); ?></head>
+<body <?php body_class(get_theme_mod('ap_dark_mode') ? 'ap-dark' : ''); ?>><?php wp_body_open(); ?>
+<header class="site-header <?php echo get_theme_mod('ap_sticky_header', true) ? 'is-sticky' : ''; ?>"><div class="ap-container header-inner"><a class="brand" href="<?php echo esc_url(home_url('/')); ?>"><?php the_custom_logo(); ?><span><?php bloginfo('name'); ?></span></a><nav class="main-nav"><?php wp_nav_menu(['theme_location'=>'primary','container'=>false,'fallback_cb'=>false]); ?></nav><a class="header-phone" href="tel:<?php echo esc_attr(preg_replace('/\D+/', '', (string) (get_option('autoparts_settings', [])['phone'] ?? ''))); ?>"><?php echo esc_html(get_option('autoparts_settings', [])['phone'] ?? 'Позвонить'); ?></a></div></header>
+<main id="content">

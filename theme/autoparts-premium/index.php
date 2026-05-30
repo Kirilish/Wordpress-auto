@@ -1,0 +1,1 @@
+<?php get_header(); ?><section class="ap-container page-head"><h1><?php single_post_title(); ?></h1></section><section class="ap-container posts"><?php while(have_posts()):the_post(); ?><article><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><?php the_excerpt(); ?></article><?php endwhile; ?></section><?php get_footer(); ?>
