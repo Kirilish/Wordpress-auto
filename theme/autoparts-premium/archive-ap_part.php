@@ -1,0 +1,1 @@
+<?php get_header(); ?><section class="ap-container page-head"><h1>Каталог запчастей</h1><p>Фильтруйте по марке, модели, OEM, состоянию, цене и наличию.</p></section><section class="ap-container"><?php echo do_shortcode('[autoparts_catalog]'); ?></section><?php get_footer(); ?>

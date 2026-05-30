@@ -1,0 +1,1 @@
+<?php get_header(); ?><section class="ap-container page-head"><h1>Страница не найдена</h1><p>Вернитесь в каталог или оставьте заявку на подбор.</p><a class="button-primary" href="<?php echo esc_url(home_url('/parts/')); ?>">В каталог</a></section><?php get_footer(); ?>
